@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<g:gems xmlns:g="http://www.example.com/gems"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.example.com/gems">
+
+    <gem id="001">
+        <name>Diamond</name>
+        <preciousness>Precious</preciousness>
+        <origin>Columbia</origin>
+        <visualParameters>
+            <color>Red</color>
+            <transparency>100</transparency>
+            <edgeNumber>10</edgeNumber>
+        </visualParameters>
+        <value>50</value>
+    </gem>
+
+    <gem id="002">
+        <name>Rubin</name>
+        <preciousness>Precious</preciousness>
+        <origin>Russia</origin>
+        <visualParameters>
+            <color>Green</color>
+            <transparency>25</transparency>
+            <edgeNumber>8</edgeNumber>
+        </visualParameters>
+        <value>100</value>
+    </gem>
+
+    <gem id="003">
+        <name>Crystal</name>
+        <preciousness>Precious</preciousness>
+        <origin>Kazakhstan</origin>
+        <visualParameters>
+            <color>White</color>
+            <transparency>100</transparency>
+            <edgeNumber>13</edgeNumber>
+        </visualParameters>
+        <value>45</value>
+    </gem>
+
+    <gem id="004">
+        <name>Quartz</name>
+        <preciousness>Semi-precious</preciousness>
+        <origin>France</origin>
+        <visualParameters>
+            <color>White</color>
+            <transparency>100</transparency>
+            <edgeNumber>6</edgeNumber>
+        </visualParameters>
+        <value>30</value>
+    </gem>
+
+    <gem id="005">
+        <name>Tourmaline</name>
+        <preciousness>Precious</preciousness>
+        <origin>Brazil</origin>
+        <visualParameters>
+            <color>Pink</color>
+            <transparency>30</transparency>
+            <edgeNumber>4</edgeNumber>
+        </visualParameters>
+        <value>60</value>
+    </gem>
+
+</g:gems>
+
+

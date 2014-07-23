@@ -1,0 +1,32 @@
+<students>
+    <student id="001">
+        <lastname>Иванов</lastname>
+        <firstname>Иван</firstname>
+        <birthday>01/03/1995</birthday>
+        <adress>
+            <city>Караганда</city>
+            <street>Ерубаева</street>
+            <build>45</build>
+            <flat>15</flat>
+        </adress>
+        <email>ggh01@mail.ru</email>
+        <group>ИС-22</group>
+        <education>Бакалавриат</education>
+    </student>
+    <student id="002">
+        <lastname>Петров</lastname>
+        <firstname>Петя</firstname>
+        <birthday>02/03/1996</birthday>
+        <adress>
+            <city>Караганда</city>
+            <street>Гоголя</street>
+            <build>45</build>
+            <flat>15</flat>
+        </adress>
+        <email>hее01@mail.ru</email>
+        <group>ИС-22</group>
+        <education>Магистратура</education>
+    </student>
+
+
+</students>
