@@ -17,7 +17,6 @@ import java.util.List;
 public class STAXParser implements ParserFactory {
     private List<Gem> gems = null;
     private Gem gem = null;
-    private String content = null;
 
 
     @Override
@@ -30,8 +29,6 @@ public class STAXParser implements ParserFactory {
                 int type = streamReader.next();
                 switch (type) {
                     case XMLStreamConstants.START_ELEMENT:
-                        startElement(streamReader);
-
                         startElement(streamReader);
                         break;
                     case XMLStreamConstants.CHARACTERS:
@@ -53,13 +50,6 @@ public class STAXParser implements ParserFactory {
 
     }
 
-    private void characters(XMLStreamReader streamReader) {
-
-        System.out.println(streamReader.getText().trim());
-
-    }
-
-
     private void startElement(XMLStreamReader streamReader) throws XMLStreamException {
 
 
@@ -70,11 +60,15 @@ public class STAXParser implements ParserFactory {
             gems = new LinkedList<Gem>();
         } else if (streamReader.getLocalName().equalsIgnoreCase("gem")) {
             gem = new Gem();
-
-
         }
+        System.out.println(string);
+    }
 
-        // System.out.println(string);
+
+    private void characters(XMLStreamReader streamReader) {
+
+        System.out.println(streamReader.getText().trim());
+
     }
 
 
