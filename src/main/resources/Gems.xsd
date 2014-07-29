@@ -21,8 +21,9 @@
             <xsd:element name="name" type="xsd:string"/>
             <xsd:element name="preciousness" type="preciousnessType"/>
             <xsd:element name="origin" type="xsd:string"/>
-            <xsd:element name="visualParameters" type="visualParametersType"/>
             <xsd:element name="value" type="xsd:int"/>
+            <xsd:element name="visualParameters" type="visualParametersType"/>
+
         </xsd:sequence>
         <xsd:attribute name="id" type="xsd:int" use="required"/>
     </xsd:complexType>

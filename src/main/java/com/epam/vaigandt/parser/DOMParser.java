@@ -1,17 +1,19 @@
 package com.epam.vaigandt.parser;
 
 import com.epam.vaigandt.entity.Gem;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.io.IOException;
+
 import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import javax.xml.bind.Element;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.File;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 
 public class DOMParser implements ParserFactory  {
 
@@ -36,14 +38,16 @@ public class DOMParser implements ParserFactory  {
                 {
                     Element element = (Element)node;
                     System.out.println("Gem #" + tmp + ":");
-//                    System.out.println("Name: " + element.getElementsByTagName("name").item(0).getChildNodes().item(0).getNodeValue());
-//                    System.out.println("Preciousness: " + element.getElementsByTagName("preciousness").item(0).getChildNodes().item(0).getNodeValue());
-//                    System.out.println("Origin: " + element.getElementsByTagName("origin").item(0).getChildNodes().item(0).getNodeValue());
-//                    System.out.println("Visual Parameters: " + element.getElementsByTagName("visualParameters").item(0).getChildNodes().item(0).getNodeValue());
-//                    System.out.println("Color: " + element.getElementsByTagName("color").item(0).getChildNodes().item(0).getNodeValue());
-//                    System.out.println("Transparency: " + element.getElementsByTagName("transparency").item(0).getChildNodes().item(0).getNodeValue());
-//                    System.out.println("Edge Number: " + element.getElementsByTagName("edgeNumber").item(0).getChildNodes().item(0).getNodeValue());
-//                    System.out.println("Value: " + element.getElementsByTagName("value").item(0).getChildNodes().item(0).getNodeValue());
+                    System.out.println("Name: " + element.getElementsByTagName("name").item(0).getChildNodes().item(0).getNodeValue());
+                    System.out.println("Preciousness: " + element.getElementsByTagName("preciousness").item(0).getChildNodes().item(0).getNodeValue());
+                    System.out.println("Origin: " + element.getElementsByTagName("origin").item(0).getChildNodes().item(0).getNodeValue());
+                    System.out.println("Value: " + element.getElementsByTagName("value").item(0).getChildNodes().item(0).getNodeValue());
+                   // System.out.println("Visual Parameters: " + element.getElementsByTagName("visualParameters").item(0).getChildNodes().item(0).getNodeValue());
+                    System.out.println("Visual Parameters: ");
+                    System.out.println("Color: " + element.getElementsByTagName("color").item(0).getChildNodes().item(0).getNodeValue());
+                    System.out.println("Transparency: " + element.getElementsByTagName("transparency").item(0).getChildNodes().item(0).getNodeValue());
+                    System.out.println("Edge Number: " + element.getElementsByTagName("edgeNumber").item(0).getChildNodes().item(0).getNodeValue());
+
                 }
             }
         }
